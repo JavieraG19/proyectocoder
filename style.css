@@ -33,7 +33,7 @@ body {
 
 
 /*menu*/
-.boton{
+.botonera{
     margin: 0%;
     padding: 0%;
     display: flex;
@@ -202,10 +202,7 @@ div {
     align-items: center;
     flex-direction: column;
 }
-.botonera{
 
-
-}
 
 
 
