@@ -33,7 +33,7 @@ body {
 
 
 /*menu*/
-.botonera{
+.boton{
     margin: 0%;
     padding: 0%;
     display: flex;
@@ -42,7 +42,7 @@ body {
 
     flex-direction: row;
     list-style: none;
-    font-size: 60%;
+    font-size: 1rem;
     gap: 1rem;
     
 }
@@ -95,20 +95,18 @@ header {
 
 main {
     display: flex;
-    margin: 0%;
+    margin: 0;
     padding: 20px 1px;
     color: #fff;
     font-family: 'Manjari', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     display: grid;
 
 }
 
 aside {
-    
-    margin: 0%;
+    margin: 0;
     padding: 20px 1px;
-
     text-align: center;
 }
 
@@ -139,12 +137,6 @@ div {
     justify-content: center;
 
 }
-.abrir-menu{ display: none;
-
-}
-
-
-
 /*grid*/
 .gridcontainer {
     background: #20222a;
@@ -154,8 +146,6 @@ div {
     display: grid;
     gap: 1.6em;
     grid-template-columns: repeat(2, 1fr);
-
-
 }
 
 .gridcontainer .title {
@@ -163,13 +153,12 @@ div {
 }
 
 .gridcontainer .content {
-    grid-column: span 3 padding: 20px;
-    border: 1px solid #000000
+    grid-column: 1/2;
+    border: 1px solid #000000;
 }
 
 .gridcontainer .asidebar {
-    grid-column: span 2;
-    background: #44607;
+    background: #446070;
     padding: 20px;
     border: 1px solid #000000
 }
@@ -191,9 +180,6 @@ div {
     background: #1e272e;
     padding: 20px;
     margin-top: 5px;
-
-
-
 }
 
 .asidebar {
@@ -203,25 +189,31 @@ div {
     flex-direction: column;
 }
 
-
-
-
-/*media queries*/
-
-@media screen and (max-width: 600px) {
+@media (max-width: 768px) {
     .abrir-menu{
         display: block;
     }
-    
 
+    .boton {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .gridcontainer .content {
+        grid-column: 1/6;
+    }
+
+    .gridcontainer .asidebar {
+        grid-column: 1/6;
+    }
  }
+
  .body{
     width: 100%;
     aspect-ratio: auto;
  }
 
-
-   .main {
+.main {
     width: 100%;
-   }
-    
+}
